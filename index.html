@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xilofon Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/instrument.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" id="company">EA COMPANY</a>
+        <nav>
+            <a href="marcador.html">Marcador</a>
+            <a href="#">Usuari</a>
+            <img src="/lib/img/">
+        </nav>
+    </div>
+    <div class="menu-lateral">
+        <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
+        <select name="Tipus" hidden>
+            <option>Rock</option>
+            <option>Clasic</option>
+        </select>
+        <select hidden>
+            <option>Canço 1</option>
+            <option>Canço 2</option>
+        </select>
+    </div>
+    <div class="joc">
+        <div class="instrument">
+            <button onclick="notaDo1()" id="notaDo1">Nota Do</button>
+            <button onclick="notaRe()" id="notaRe">Nota</button>
+            <button onclick="notaMi()" id="notaMi">Nota</button>
+            <button onclick="notaFa()" id="notaFa">Nota</button>
+            <button onclick="notaSol()" id="notaSol">Nota</button>
+            <button onclick="notaLa()" id="notaLa">Nota</button>
+            <button onclick="notaSi()" id="notaSi">Nota</button>
+            <button onclick="notaDo()" id="notaDo">Nota</button>
+        </div>
+        <div class="partitutura">
+            <p>potrato</p>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

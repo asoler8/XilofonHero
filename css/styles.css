@@ -1,0 +1,137 @@
+/* IMPORTS */
+
+@font-face{
+    font-family: bignoodletitling;
+    src: url(../fonts/big_noodle_titling.ttf);
+}
+@font-face{
+    font-family: municipal;
+    src: url(../fonts/Municipal.ttf);
+}
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+/* CODI CSS */
+
+/* GENERAL */
+
+    *{
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+    }
+
+/* MENU NAV */
+
+    .header{
+        background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));
+        height: 5vw;
+        width: 100%;        
+        z-index: 4;
+        position: fixed;
+        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+
+    }
+    #company{
+        float: left;
+        padding: 1vw;
+        font-size: 2.5vw;
+        text-decoration: none;
+        color: black;
+        font-family: bignoodletitling;
+        font-weight: bolder;
+    }
+    nav{
+        text-align: right;
+        font-size: 2vw;
+        padding: 1.25vw;
+    }
+    nav > a{
+        font-family: bignoodletitling;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-right: 2vw;
+        color: black;
+    }
+
+/* MENU LATERAL */
+
+    .menu-lateral{
+        background-color: lightgrey;
+        position: fixed;
+        top: 5vw;
+        left: 0vw;
+        width: 10vw;
+        height: 42.9vw;
+        z-index: 5;
+        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+    }
+    .desplegable-lateral{
+        border: 0.1vw solid black;
+        border-radius: 0.2vw;
+        height: 2vw;
+        width: 2vw;
+        margin: 1.4vw;
+    }
+
+/* JOC */
+
+    .joc{
+        background-color: lightskyblue;
+        position: relative;
+        width: 94.10vw;
+        top: 5vw;
+        left: 5vw;
+        height: 44.9vw;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column;
+    }
+    #1{
+        background: linear-gradient(to right, #65469b,#7e57c2); 
+    }
+    #2{
+        background: linear-gradient(to right,#4a569a, #5c6bc0);
+    }
+    #3{
+        background-color: linear-gradient(to right, #3584c4);
+    }
+    #4{
+        
+    }
+    #5{
+
+    }
+    #6{
+
+    }
+    #7{
+
+    }
+    #8{
+
+    }
+
+/* FOOTER */
+
+    .footer{
+        background-color: black;
+        position: relative;
+        z-index: 5;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 6vw;
+        -webkit-box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
+        -moz-box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
+        box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
+    }
