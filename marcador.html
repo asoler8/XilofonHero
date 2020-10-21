@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,17 @@
         <a href="index.html" id="company">EA COMPANY</a>
         <nav>
             <a href="marcador.html">Marcador</a>
-            <a class="user" href="#desplegableUser">Usuari</a>
-            <img class="userImg" src="lib/img/img_avatar.png">
+            <a class="user" href="#desplegableUser">LogIn</a>
+            <img class="userImg" src="lib/img/unknown.jpg">
         </nav>
     </div>
     <div id="desplegableUser" class="popup">
         <div class="popupContent">
             <a href="#">x</a>
-            <form id="login-form" method="post" action="php/conection.php" >
-                <fieldset>
-                    <legend>Iniciar Session</legend>
-                    <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
-                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br>
-                </fieldset><br>
+            <form id="login-form" method="post" action="php/auth_login.php" >
+                <label for="username">Iniciar Session</label>
+                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
                 <span>Tu cuenta fue creada previamente?</span>
                 <input type="checkbox" id="exist" name="exist" value="exist"><br>
                 <input type="submit" value="Enviar">
@@ -31,7 +29,7 @@
             
         </div>
     </div>   
-    <div class="menu-lateral">
+    <div id="menu-lateral">
         <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
         <select name="Tipus" hidden>
             <option>Rock</option>
@@ -43,7 +41,7 @@
         </select>
     </div>
     <div class="joc">
-        
+        <iframe id="taulaMarcador" src="marcadorTaula.php"></iframe>
     </div>
     <div class="footer">
 

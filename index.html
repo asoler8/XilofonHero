@@ -6,6 +6,7 @@
     <title>Xilofon Hero</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/instrument.js"></script>
+    <script src="php/checkuser.php"></script>
 </head>
 <body>
     <div class="header">
@@ -13,7 +14,7 @@
         <nav>
             <a href="marcador.html">Marcador</a>
             <a class="user" href="#desplegableUser">LogIn</a>
-            <img class="userImg" src="lib/img/img_avatar.png">
+            <img class="userImg" src="lib/img/unknown.jpg">
         </nav>
     </div>
     <div id="desplegableUser" class="popup">
@@ -29,7 +30,7 @@
             <input type="submit" value="Enviar">
         </div>
     </div> 
-    <div class="menu-lateral">
+    <div id="menu-lateral">
         <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
         <select name="Tipus" hidden>
             <option>Rock</option>
@@ -52,7 +53,7 @@
             <button onclick="notaDo()" id="notaDo">Do</button>
         </div>
         <div class="partitutura">
-            <div class="notaClick">
+            <div id="notaClick">
                 <p id="notaClicar">Nota a Clickar</p>
             </div>
         </div>

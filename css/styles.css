@@ -118,7 +118,7 @@
 
 /* MENU LATERAL */
 
-    .menu-lateral{
+    #menu-lateral{
         background-color: lightgrey;
         position: fixed;
         top: 5vw;
@@ -136,6 +136,24 @@
         height: 2vw;
         width: 2vw;
         margin: 1.4vw;
+    }
+/* TAULA MARCADOR */
+
+    #taulaMarcador{
+        height: 35vw;
+        width: 60vw;
+        background-color: white;
+    }
+    #loginRequest{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #loginRequest > h1{
+        padding-top: 25%;
+        font-size: 6vw;
+        text-transform: uppercase;
+        font-family: bignoodletitling;
     }
 
 /* JOC */
@@ -221,7 +239,7 @@
     .partitura{
         padding: 1vw;
     }
-    .notaClick{
+    #notaClick{
         width: 15vw;
         height: 15vw;
         background-color: #fff;
