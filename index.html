@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xilofon Hero</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/instrument.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <a href="index.html" id="company">EA COMPANY</a>
-        <nav>
-            <a href="marcador.html">Marcador</a>
-            <a href="#">Usuari</a>
-            <img src="/lib/img/">
-        </nav>
+      <a href="index.html" id="company">EA COMPANY</a>
+      <nav>
+        <a href="marcador.html">Marcador</a>
+        <a href="#">Usuari</a>
+        <img src="/lib/img/" />
+      </nav>
     </div>
-    <div class="menu-lateral">
-        <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
-        <select name="Tipus" hidden>
-            <option>Rock</option>
-            <option>Clasic</option>
+    <div id="menu-lateral">
+      <img
+        class="desplegable-lateral"
+        onclick="desplegar()"
+        src="lib/img/simbolo_desplegable.png"
+      />
+      <div id="despContent">
+        <p>dsajfhsadfjasdhf</p>
+        <select class="desple" name="Tipus">
+          <option>Rock</option>
+          <option>Clasic</option>
         </select>
-        <select hidden>
-            <option>Canço 1</option>
-            <option>Canço 2</option>
+        <select class="desple">
+          <option>Canço 1</option>
+          <option>Canço 2</option>
         </select>
+      </div>
     </div>
     <div class="joc">
-        <div class="instrument">
-            <button onclick="notaDo1()" id="notaDo1">Do</button>
-            <button onclick="notaRe()" id="notaRe">Re</button>
-            <button onclick="notaMi()" id="notaMi">Mi</button>
-            <button onclick="notaFa()" id="notaFa">Fa</button>
-            <button onclick="notaSol()" id="notaSol">Sol</button>
-            <button onclick="notaLa()" id="notaLa">La</button>
-            <button onclick="notaSi()" id="notaSi">Si</button>
-            <button onclick="notaDo()" id="notaDo">Do</button>
+      <div class="instrument">
+        <button onclick="notaDo1()" id="notaDo1">Do</button>
+        <button onclick="notaRe()" id="notaRe">Re</button>
+        <button onclick="notaMi()" id="notaMi">Mi</button>
+        <button onclick="notaFa()" id="notaFa">Fa</button>
+        <button onclick="notaSol()" id="notaSol">Sol</button>
+        <button onclick="notaLa()" id="notaLa">La</button>
+        <button onclick="notaSi()" id="notaSi">Si</button>
+        <button onclick="notaDo()" id="notaDo">Do</button>
+      </div>
+      <div class="partitura">
+        <div id="notaClick">
+          <p id="notaClicar">Nota a Clickar</p>
         </div>
-        <div class="partitutura">
-            <div class="notaClick">
-                <p id="notaClicar">Nota a Clickar</p>
-            </div>
-        </div>
+        <button onclick="cancion()">PROVA DIABOLO</button>
+      </div>
     </div>
-    <div class="footer">
-
-    </div>
-</body>
+    <div class="footer"></div>
+  </body>
 </html>

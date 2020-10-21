@@ -1,191 +1,191 @@
 /* IMPORTS */
 
-@font-face{
-    font-family: bignoodletitling;
-    src: url(../fonts/big_noodle_titling.ttf);
+@font-face {
+  font-family: bignoodletitling;
+  src: url(../fonts/big_noodle_titling.ttf);
 }
-@font-face{
-    font-family: municipal;
-    src: url(../fonts/Municipal.ttf);
+@font-face {
+  font-family: municipal;
+  src: url(../fonts/Municipal.ttf);
 }
 /* font-family: 'Open Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 /* CODI CSS */
 
 /* GENERAL */
 
-    *{
-        margin: 0;
-        padding: 0;
-        top: 0;
-        left: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
 
 /* MENU NAV */
 
-    .header{
-        background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));
-        height: 5vw;
-        width: 100%;        
-        z-index: 4;
-        position: fixed;
-        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-
-    }
-    #company{
-        float: left;
-        padding: 1vw;
-        font-size: 2.5vw;
-        text-decoration: none;
-        color: black;
-        font-family: bignoodletitling;
-        font-weight: bolder;
-    }
-    nav{
-        text-align: right;
-        font-size: 2vw;
-        padding: 1.25vw;
-    }
-    nav > a{
-        font-family: bignoodletitling;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding-right: 2vw;
-        color: black;
-    }
+.header {
+  background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));
+  height: 5vw;
+  width: 100%;
+  z-index: 4;
+  position: fixed;
+  -webkit-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+}
+#company {
+  float: left;
+  padding: 1vw;
+  font-size: 2.5vw;
+  text-decoration: none;
+  color: black;
+  font-family: bignoodletitling;
+  font-weight: bolder;
+}
+nav {
+  text-align: right;
+  font-size: 2vw;
+  padding: 1.25vw;
+}
+nav > a {
+  font-family: bignoodletitling;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 2vw;
+  color: black;
+}
 
 /* MENU LATERAL */
 
-    .menu-lateral{
-        background-color: lightgrey;
-        position: fixed;
-        top: 5vw;
-        left: 0vw;
-        width: 5vw;
-        height: 47.9vw;
-        z-index: 5;
-        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-    }
-    .desplegable-lateral{
-        border: 0.1vw solid black;
-        border-radius: 0.2vw;
-        height: 2vw;
-        width: 2vw;
-        margin: 1.4vw;
-    }
+#menu-lateral {
+  background-color: lightgrey;
+  position: fixed;
+  top: 5vw;
+  left: 0vw;
+  width: 5vw;
+  height: 47.9vw;
+  z-index: 5;
+  -webkit-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+}
+.desplegable-lateral {
+  border: 0.1vw solid black;
+  border-radius: 0.2vw;
+  height: 2vw;
+  width: 2vw;
+  margin: 1.4vw;
+}
+#despContent {
+  color: white;
+  display: none;
+}
 
 /* JOC */
 
-    .joc{
-        background-color: lightskyblue;
-        position: relative;
-        width: 94.10vw;
-        top: 5vw;
-        left: 5vw;
-        height: 44.9vw;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-flow: column;
-    }
-    .instrument{
-        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
-        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-        border-radius: 0.5vw;
-        background-color: blue;
-        width: 40vw;
-        padding: 2vw;
-        display: flex;
-        align-items: center;
-        flex-flow: row;
-        justify-content: center;
-    }
-    .instrument > button{
-        margin-left: 0.5vw;
-        text-transform: uppercase;
-    }
-    #notaDo1{
-        background: linear-gradient(to right, #65469b,#7e57c2);
-        height: 18vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaRe{
-        background: linear-gradient(to right,#4a569a, #5c6bc0);
-        height: 16vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaMi{
-        background: linear-gradient(to right, #3584c4,#42a5f5);
-        height: 14vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaFa{
-        background: linear-gradient(to right, #1e857b, #26a69a);
-        height: 12vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaSol{
-        background: linear-gradient(to right, #529555, #66bb6a);
-        height: 10vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaLa{
-        background: linear-gradient(to right, #a9b446, #d4e157);
-        height: 8vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaSi{
-        background: linear-gradient(to right, #cca120, #ffca28);
-        height: 6vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    #notaDo{
-        background: linear-gradient(to right, #cc5a36, #ff7043);
-        height: 4vw;
-        width: 2.5vw;
-        border: 0.15vw solid black; 
-    }
-    .partitura{
-        padding: 1vw;
-    }
-    .notaClick{
-        width: 15vw;
-        height: 15vw;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
+.joc {
+  background-color: lightskyblue;
+  position: relative;
+  width: 94.1vw;
+  top: 5vw;
+  left: 5vw;
+  height: 44.9vw;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column;
+}
+.instrument {
+  -webkit-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+  border-radius: 0.5vw;
+  background-color: blue;
+  width: 40vw;
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: center;
+}
+.instrument > button {
+  margin-left: 0.5vw;
+  text-transform: uppercase;
+}
+#notaDo1 {
+  background: linear-gradient(to right, #65469b, #7e57c2);
+  height: 18vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaRe {
+  background: linear-gradient(to right, #4a569a, #5c6bc0);
+  height: 16vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaMi {
+  background: linear-gradient(to right, #3584c4, #42a5f5);
+  height: 14vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaFa {
+  background: linear-gradient(to right, #1e857b, #26a69a);
+  height: 12vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaSol {
+  background: linear-gradient(to right, #529555, #66bb6a);
+  height: 10vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaLa {
+  background: linear-gradient(to right, #a9b446, #d4e157);
+  height: 8vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaSi {
+  background: linear-gradient(to right, #cca120, #ffca28);
+  height: 6vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+#notaDo {
+  background: linear-gradient(to right, #cc5a36, #ff7043);
+  height: 4vw;
+  width: 2.5vw;
+  border: 0.15vw solid black;
+}
+.partitura {
+  padding: 1vw;
+}
+#notaClick {
+  width: 15vw;
+  height: 15vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* FOOTER */
 
-    .footer{
-        background-color: black;
-        position: relative;
-        z-index: 5;
-        left: 0;
-        bottom: 0;
-        top: 5vw;
-        width: 100%;
-        min-height: 6vw;
-        -webkit-box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
-        -moz-box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
-        box-shadow: 0px -9px 74px 2px rgba(0,0,0,0.521);
-    }
+.footer {
+  background-color: black;
+  position: relative;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  top: 5vw;
+  width: 100%;
+  min-height: 6vw;
+  -webkit-box-shadow: 0px -9px 74px 2px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 0px -9px 74px 2px rgba(0, 0, 0, 0.521);
+  box-shadow: 0px -9px 74px 2px rgba(0, 0, 0, 0.521);
+}
