@@ -12,10 +12,23 @@
         <a href="index.html" id="company">EA COMPANY</a>
         <nav>
             <a href="marcador.html">Marcador</a>
-            <a href="#">Usuari</a>
-            <img src="/lib/img/">
+            <a class="user" href="#desplegableUser">LogIn</a>
+            <img class="userImg" src="lib/img/img_avatar.png">
         </nav>
     </div>
+    <div id="desplegableUser" class="popup">
+        <div class="popupContent">
+            <a href="#">x</a>
+            <fieldset>
+                <legend>Iniciar Session</legend>
+                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br>
+            </fieldset><br>
+            <span>Tu cuenta fue creada previamente?</span>
+            <input type="checkbox" id="exist" name="exist" value="exist" required><br>
+            <input type="submit" value="Enviar">
+        </div>
+    </div> 
     <div class="menu-lateral">
         <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
         <select name="Tipus" hidden>

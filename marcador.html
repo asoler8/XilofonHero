@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xilofon Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" id="company">EA COMPANY</a>
+        <nav>
+            <a href="marcador.html">Marcador</a>
+            <a class="user" href="#desplegableUser">Usuari</a>
+            <img class="userImg" src="lib/img/img_avatar.png">
+        </nav>
+    </div>
+    <div id="desplegableUser" class="popup">
+        <div class="popupContent">
+            <a href="#">x</a>
+            <form id="login-form" method="post" action="php/conection.php" >
+                <fieldset>
+                    <legend>Iniciar Session</legend>
+                    <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br>
+                </fieldset><br>
+                <span>Tu cuenta fue creada previamente?</span>
+                <input type="checkbox" id="exist" name="exist" value="exist"><br>
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </div>
+    </div>   
+    <div class="menu-lateral">
+        <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
+        <select name="Tipus" hidden>
+            <option>Rock</option>
+            <option>Clasic</option>
+        </select>
+        <select hidden>
+            <option>Canço 1</option>
+            <option>Canço 2</option>
+        </select>
+    </div>
+    <div class="joc">
+        
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
