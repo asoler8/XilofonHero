@@ -13,7 +13,7 @@
       <nav>
         <a href="marcador.html">Marcador</a>
         <a href="#">Usuari</a>
-        <img src="/lib/img/" />
+        <img class="userImg" src="/lib/img/unknown.jpg"/>
       </nav>
     </div>
     <div id="menu-lateral">
@@ -27,6 +27,35 @@
         <select class="desple" name="Tipus">
           <option>Rock</option>
           <option>Clasic</option>
+    <script src="php/checkuser.php"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" id="company">EA COMPANY</a>
+        <nav>
+            <a href="marcador.html">Marcador</a>
+            <a class="user" href="#desplegableUser">LogIn</a>
+            <img class="userImg" src="lib/img/unknown.jpg">
+        </nav>
+    </div>
+    <div id="desplegableUser" class="popup">
+        <div class="popupContent">
+            <div class="menuForm">
+                <h3>Iniciar Sessió</h3>
+                <a href="#">&#8617;</a>
+            </div>
+            <form id="login-form" method="post" action="php/auth_login.php" >
+                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div> 
+    <div id="menu-lateral">
+        <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
+        <select name="Tipus" hidden>
+            <option>Rock</option>
+            <option>Clasic</option>
         </select>
         <select class="desple">
           <option>Canço 1</option>
@@ -51,6 +80,9 @@
         </div>
         <button id="boton">Play</button>
       </div>
+    </div>
+    <div class="footer">
+
     </div>
     <div class="footer"></div>
   </body>
