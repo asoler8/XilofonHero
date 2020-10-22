@@ -24,37 +24,96 @@
 
 /* MENU NAV */
 
-.header {
-  background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));
-  height: 5vw;
-  width: 100%;
-  z-index: 4;
-  position: fixed;
-  -webkit-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-  -moz-box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-  box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
-}
-#company {
-  float: left;
-  padding: 1vw;
-  font-size: 2.5vw;
-  text-decoration: none;
-  color: black;
-  font-family: bignoodletitling;
-  font-weight: bolder;
-}
-nav {
-  text-align: right;
-  font-size: 2vw;
-  padding: 1.25vw;
-}
-nav > a {
-  font-family: bignoodletitling;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-right: 2vw;
-  color: black;
-}
+    .header{
+        background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));
+        height: 5vw;
+        width: 100%;        
+        z-index: 4;
+        position: fixed;
+        -webkit-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        -moz-box-shadow: 0px 11px 28px 2px rgba(0,0,0,0.521);
+        box-shadow: 0px 11px 28px 2px rgba(0, 0, 0, 0.521);
+
+    }
+    #company{
+        float: left;
+        padding: 1vw;
+        font-size: 2.5vw;
+        text-decoration: none;
+        color: black;
+        font-family: bignoodletitling;
+        font-weight: bolder;
+    }
+    nav{
+        text-align: right;
+        font-size: 2vw;
+        display: flex;
+        padding: 0.5vw 1vw 0vw 0vw;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav > a{
+        font-family: bignoodletitling;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+    }
+    nav > a:nth-child(1){
+        padding-right: 2vw;
+    }
+    nav > a:nth-child(2){
+        padding-right: 1vw;
+    }
+    nav > img{
+        border: 0.2vw solid black;
+        height: 4vw;
+        width: 4vw;
+        border-radius: 50%;
+    }
+
+/* USUARI POPUP */
+
+.popupContent{
+    background: linear-gradient(to right, rgb(75, 228, 255), rgb(63, 253, 63));;
+    width:20vw;
+    height: auto;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    font-size: 1vw;
+  }
+  .menuForm{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuForm > a{
+      text-decoration: none;
+      color: black;
+      padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+      background-color: grey;
+      border: 0.1vw solid black;
+  }
+  form > input{
+    font-size: 1vw;
+    width: 18vw;
+    text-align: center;
+  }
+  .popup{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #desplegableUser:target{
+    opacity:1;
+    pointer-events:auto;
+    z-index: 15;
+  }
 
 /* MENU LATERAL */
 
@@ -81,7 +140,34 @@ nav > a {
   color: white;
   display: none;
 }
+/* TAULA MARCADOR */
 
+    #taulaMarcador{
+        height: 35vw;
+        width: 60vw;
+        background-color: white;
+    }
+    #loginRequest{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #loginRequest > h1{
+        padding-top: 25%;
+        font-size: 6vw;
+        text-transform: uppercase;
+        font-family: bignoodletitling;
+    }
+    .taula{
+        display: flex;
+        justify-content: space-around;
+    }
+    .taula > p{
+        text-transform: uppercase;
+        font-size: 2vw;
+        padding: 1vw;
+        
+    }
 /* JOC */
 
 .joc {

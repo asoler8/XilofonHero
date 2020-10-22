@@ -7,21 +7,30 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/instrument.js"></script>
   </head>
-  <body>
+<body>
     <div class="header">
-      <a href="index.html" id="company">EA COMPANY</a>
-      <nav>
-        <a href="marcador.html">Marcador</a>
-        <a href="#">Usuari</a>
-        <img src="/lib/img/" />
-      </nav>
+        <a href="index.html" id="company">EA COMPANY</a>
+        <nav>
+            <a href="marcador.html">Marcador</a>
+            <a class="user" href="#desplegableUser">LogIn</a>
+            <img class="userImg" src="lib/img/unknown.jpg">
+        </nav>
     </div>
+    <div id="desplegableUser" class="popup">
+        <div class="popupContent">
+            <div class="menuForm">
+                <h3>Iniciar Sessió</h3>
+                <a href="#">&#8617;</a>
+            </div>
+            <form id="login-form" method="post" action="php/auth_login.php" >
+                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div> 
     <div id="menu-lateral">
-      <img
-        class="desplegable-lateral"
-        onclick="desplegar()"
-        src="lib/img/simbolo_desplegable.png"
-      />
+      <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png"/>
       <div id="despContent">
         <p>dsajfhsadfjasdhf</p>
         <select class="desple" name="Tipus">
@@ -52,6 +61,9 @@
         
       </div>
       <button id="boton" onclick="cancion()">Play</button>
+    </div>
+    <div class="footer">
+
     </div>
     <div class="footer"></div>
   </body>
