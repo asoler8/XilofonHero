@@ -172,6 +172,7 @@ boton.addEventListener("click", function(){
  }
 });
 
+/*
 function start(){
   var boton = document.getElementById("boton");
   boton.addEventListener("click", function(){
@@ -186,3 +187,6 @@ function start(){
    }
   },
 }
+
+*/
+
