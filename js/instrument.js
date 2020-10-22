@@ -171,3 +171,18 @@ boton.addEventListener("click", function(){
    concion = false;
  }
 });
+
+function start(){
+  var boton = document.getElementById("boton");
+  boton.addEventListener("click", function(){
+   if (cancion) {
+     v.play();
+     this.innerHTML = "Pause";
+      cancion= true;
+   } else {
+     v.pause();
+     this.innerHTML = "Play";
+     concion = false;
+   }
+  },
+}
