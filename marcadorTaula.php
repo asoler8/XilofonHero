@@ -18,17 +18,26 @@
     echo $html;
     }
     if(isset($_SESSION['username'])){
-        $query = "SELECT `username`,`points` FROM `login` ";
-            $result = mysqli_query($conn, $query);
-            if (mysqli_num_rows($result) > 0) {
                 // output data of each row
-                echo "<table>";
-                while($row = mysqli_fetch_assoc($result)) {
-                    echo "Usuari: " . $row["username"]. " - Punts: " . $row["points"]. "<br>";
-                }
-                echo "</table>";
-            } else {
-                echo "0 results";
-            }
+                echo "
+                <html>
+                    <head>
+                        <link rel='stylesheet' href='css/styles.css'> 
+                    </head>
+                    <body>";
+                        $query = "SELECT `username`,`points` FROM `login` ORDER BY `points` DESC ";
+                        $result = mysqli_query($conn, $query);
+                        if (mysqli_num_rows($result) > 0) {
+                            echo "<h2 style='text-align:center;text-decoration:underline;'>Ranking</h2>";
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo "<div class='taula'><p>".$row['username']."</p><p>".$row['points']."</p></div>";
+                            }
+                        }else{
+                            echo "0 results";
+                        }
+                        echo "
+                    </body>
+                </html>
+        ";
     }
 ?>

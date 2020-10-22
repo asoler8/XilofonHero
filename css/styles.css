@@ -84,17 +84,18 @@
     position: relative;
     font-size: 1vw;
   }
-  .popupContent > a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    font-size: 1.5vw;
-    float: right;
+  .menuForm{
+    display: flex;
+    justify-content: space-between;
   }
-  .popupContent > fieldset{
-      padding: 1vw;
+  .menuForm > a{
+      text-decoration: none;
+      color: black;
+      padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+      background-color: grey;
+      border: 0.1vw solid black;
   }
-  fieldset > input{
+  form > input{
     font-size: 1vw;
     width: 18vw;
     text-align: center;
@@ -155,7 +156,16 @@
         text-transform: uppercase;
         font-family: bignoodletitling;
     }
-
+    .taula{
+        display: flex;
+        justify-content: space-around;
+    }
+    .taula > p{
+        text-transform: uppercase;
+        font-size: 2vw;
+        padding: 1vw;
+        
+    }
 /* JOC */
 
     .joc{

@@ -20,19 +20,18 @@ session_start();
                         </nav>
                     </div>
                     <div id="desplegableUser" class="popup">
-                        <div class="popupContent">
-                            <a href="#">x</a>
-                            <form id="login-form" method="post" action="php/auth_login.php" >
-                                <label for="username">Iniciar Session</label>
-                                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
-                                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
-                                <span>Tu cuenta fue creada previamente?</span>
-                                <input type="checkbox" id="exist" name="exist" value="exist"><br>
-                                <input type="submit" value="Enviar">
-                            </form>
-                            
+                    <div class="popupContent">
+                        <div class="menuForm">
+                            <h3>Iniciar Sessió</h3>
+                            <a href="#">&#8617;</a>
                         </div>
-                    </div>   
+                        <form id="login-form" method="post" action="php/auth_login.php" >
+                            <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                            <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>    
                     <div id="menu-lateral">
                         <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png">  
                         <select name="Tipus" hidden>
