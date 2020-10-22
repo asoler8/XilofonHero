@@ -29,7 +29,9 @@ function comprovar(){
     tecla = true;
     
 }
-
+function playpausa(){
+  
+}
 
 
 function cancion(){
@@ -143,7 +145,7 @@ function desplegar() {
 function aparecer() {
   var menuLat = document.getElementById("menu-lateral");
   var x = document.getElementById("despContent");
-  x.style.display = "block";
+  x.style.display = "flex";
   menuLat.style.width = "20vw";
   console.log("funciona");
 }
@@ -154,3 +156,18 @@ function esconder() {
   menuLat.style.width = "5vw";
   console.log("funciona2");
 }
+
+
+
+var boton = document.getElementById("boton");
+boton.addEventListener("click", function(){
+ if (cancion) {
+   v.play();
+   this.innerHTML = "Pause";
+    cancion= true;
+ } else {
+   v.pause();
+   this.innerHTML = "Play";
+   concion = false;
+ }
+});
