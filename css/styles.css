@@ -115,10 +115,11 @@ nav > a {
   text-transform: uppercase;
 }
 #notaDo1 {
-  background: linear-gradient(to right, #65469b, #7e57c2);
+  background: black;
   height: 18vw;
   width: 2.5vw;
   border: 0.15vw solid black;
+  color:  #65469b;
 }
 #notaRe {
   background: linear-gradient(to right, #4a569a, #5c6bc0);
