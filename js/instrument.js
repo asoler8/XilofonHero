@@ -143,7 +143,7 @@ function desplegar() {
 function aparecer() {
   var menuLat = document.getElementById("menu-lateral");
   var x = document.getElementById("despContent");
-  x.style.display = "block";
+  x.style.display = "flex";
   menuLat.style.width = "20vw";
   console.log("funciona");
 }
