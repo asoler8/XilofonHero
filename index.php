@@ -132,7 +132,7 @@
         <div id="notaClick">
           <p id="notaClicar">Nota a Clickar</p>
         </div>
-        <button id="boton">Play</button>
+        <button id="boton";">Play</button>
       </div>
     </div>
     <div class="footer">

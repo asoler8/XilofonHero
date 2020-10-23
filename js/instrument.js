@@ -51,86 +51,93 @@ console.log("NOTA: " + arrayNota[i]);
 color.style.backgroundColor = arrayColor[i];
 MNota.innerHTML = arrayNota[i];
 }
-
+function playNote(frequency, type) {
+  var context=new AudioContext();
+  var o=null;
+  var g= null;
+    o = context.createOscillator();
+    g = context.createGain();
+    o.type = type;
+    o.connect(g);
+    o.frequency.value = frequency;
+    g.connect(context.destination);
+    o.start(0);
+    g.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 0.5);
+}
 function notaDo1() {
-  var audio = new Audio("lib/notas/do-.mp3");
-  audio.play();
+  //var audio = new Audio("lib/notas/do-.mp3");
+  //audio.play();
+  playNote(261,"square");
+  console.log("nota DO");
   document.getElementById("notaDo1").style.background = "#65469b";
   document.getElementById("notaDo1").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaDo1").style.background = "black";
     document.getElementById("notaDo1").style.color = "#65469b";
-  }, 2000);
+  }, 500);
 }
 function notaRe() {
-  var audio = new Audio("lib/notas/re.mp3");
-  audio.play();
+  playNote(293,"square");
   document.getElementById("notaRe").style.background = "#4a569a";
   document.getElementById("notaRe").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaRe").style.background = "black";
     document.getElementById("notaRe").style.color = "#4a569a";
-  }, 1300);
+  }, 500);
 }
 function notaMi() {
-  var audio = new Audio("lib/notas/mi.mp3");
-  audio.play();
+  playNote(329,"square");
   document.getElementById("notaMi").style.background = "#3584c4";
   document.getElementById("notaMi").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaMi").style.background = "black";
     document.getElementById("notaMi").style.color = "#3584c4";
-  }, 1000);
+  }, 500);
 }
 function notaFa() {
-  var audio = new Audio("lib/notas/fa.mp3");
-  audio.play();
+  playNote(349,"square");
   document.getElementById("notaFa").style.background = "#1e857b";
   document.getElementById("notaFa").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaFa").style.background = "black";
     document.getElementById("notaFa").style.color = "#1e857b";
-  }, 1000);
+  }, 500);
 }
 function notaSol() {
-  var audio = new Audio("lib/notas/sol.mp3");
-  audio.play();
+  playNote(392,"square");
   document.getElementById("notaSol").style.background = "#529555";
   document.getElementById("notaSol").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaSol").style.background = "black";
     document.getElementById("notaSol").style.color = "#529555";
-  }, 1300);
+  }, 500);
 }
 function notaLa() {
-  var audio = new Audio("lib/notas/la.mp3");
-  audio.play();
+  playNote(440,"square");
   document.getElementById("notaLa").style.background = "#a9b446";
   document.getElementById("notaLa").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaLa").style.background = "black";
     document.getElementById("notaLa").style.color = "#a9b446";
-  }, 1000);
+  }, 500);
 }
 function notaSi() {
-  var audio = new Audio("lib/notas/si.mp3");
-  audio.play();
+  playNote(493,"square");
   document.getElementById("notaSi").style.background = "#cca120";
   document.getElementById("notaSi").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaSi").style.background = "black";
     document.getElementById("notaSi").style.color = "#cca120";
-  }, 1000);
+  }, 500);
 }
 function notaDo() {
-  var audio = new Audio("lib/notas/do+.mp3");
-  audio.play();
+  playNote(523,"square");
   document.getElementById("notaDo").style.background = "#cc5a36";
   document.getElementById("notaDo").style.color = "black";
   setTimeout(() => {
     document.getElementById("notaDo").style.background = "black";
     document.getElementById("notaDo").style.color = "#cc5a36";
-  }, 1800);
+  }, 500);
 }
 
 function desplegar() {
@@ -147,14 +154,12 @@ function aparecer() {
   var x = document.getElementById("despContent");
   x.style.display = "flex";
   menuLat.style.width = "20vw";
-  console.log("funciona");
 }
 function esconder() {
   var menuLat = document.getElementById("menu-lateral");
   var x = document.getElementById("despContent");
   x.style.display = "none";
   menuLat.style.width = "5vw";
-  console.log("funciona2");
 }
 
 
@@ -172,21 +177,52 @@ boton.addEventListener("click", function(){
  }
 });
 
-/*
-function start(){
-  var boton = document.getElementById("boton");
-  boton.addEventListener("click", function(){
-   if (cancion) {
-     v.play();
-     this.innerHTML = "Pause";
-      cancion= true;
-   } else {
-     v.pause();
-     this.innerHTML = "Play";
-     concion = false;
-   }
-  },
+function canço(i){
+  if (i==1){
+    var notaNom = ["Do","Re","Mi","Fa","Sol","La","Si","Do"];
+    setTimeout(() => {
+      notaDo1();
+    }, 500);
+    setTimeout(() => {
+      notaDo1();
+    }, 1000);
+    setTimeout(() => {
+      notaSol();
+    }, 1500);
+    setTimeout(() => {
+      notaSol();
+    }, 2000);
+    setTimeout(() => {
+      notaLa();
+    }, 2500);
+    setTimeout(() => {
+      notaLa();
+    }, 3000);
+    setTimeout(() => {
+      notaSol();
+    }, 3500);
+    setTimeout(() => {
+      notaFa();
+    }, 4000);
+    setTimeout(() => {
+      notaFa();
+    }, 4500);
+    setTimeout(() => {
+      notaMi();
+    }, 5000);
+    setTimeout(() => {
+      notaMi();
+    }, 5500);
+    setTimeout(() => {
+      notaRe();
+    }, 6000);
+    setTimeout(() => {
+      notaRe();
+    }, 6500);
+    setTimeout(() => {
+      notaDo;
+    }, 7000);
+  }else{
+    console.log("pos ok");
+  }
 }
-
-*/
-

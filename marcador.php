@@ -36,17 +36,6 @@
                 </div>
                 </div>   
                 <div id="menu-lateral">
-                <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png"/>
-                <div id="despContent">
-                    <h3>Cançons</h3>
-                    <button onclick="canço(1)">Canço</button>
-                    <button>Canço</button>
-                    <button>Canço</button>
-                    <button>Canço</button>
-                    <br>
-                    <h3>AutoPlay</h3>
-                    <input type="checkbox" checked>
-                </div>
                 </div>
             <div class="joc">
                 <iframe id="taulaMarcador" src="marcadorTaula.php"></iframe>
@@ -89,17 +78,6 @@
                 </div>
             </div>   
             <div id="menu-lateral">
-            <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png"/>
-            <div id="despContent">
-                <h3>Cançons</h3>
-                <button onclick="canço(1)">Canço</button>
-                <button>Canço</button>
-                <button>Canço</button>
-                <button>Canço</button>
-                <br>
-                <h3>AutoPlay</h3>
-                <input type="checkbox" checked>
-            </div>
             </div>
             <div class="joc">
                 <iframe id="taulaMarcador" src="marcadorTaula.php"></iframe>
