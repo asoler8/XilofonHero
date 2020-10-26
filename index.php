@@ -59,13 +59,14 @@
                     <button onclick="notaSi()" id="notaSi">Si</button>
                     <button onclick="notaDo()" id="notaDo">Do</button>
                 </div>
-                <div class="partitutura">
+                <div class="partitura">
                     <div id="notaClick">
                         <p id="notaClicar">Nota a Clickar</p>
                     </div>
                 </div>
-            </div>
-            <div class="footer">
+                <button id="boton" onclick="cancion()";">Play</button>
+                </div>
+                <div class="footer">
         
             </div>
         </body>
@@ -132,8 +133,8 @@
         <div id="notaClick">
           <p id="notaClicar">Nota a Clickar</p>
         </div>
-        <button id="boton";">Play</button>
       </div>
+      <button id="boton" onclick="cancion()";">Play</button>
     </div>
     <div class="footer">
 

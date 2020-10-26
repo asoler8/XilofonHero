@@ -162,20 +162,16 @@ function esconder() {
   menuLat.style.width = "5vw";
 }
 
-
-
-var boton = document.getElementById("boton");
-boton.addEventListener("click", function(){
- if (cancion) {
-   v.play();
-   this.innerHTML = "Pause";
-    cancion= true;
- } else {
-   v.pause();
-   this.innerHTML = "Play";
-   concion = false;
- }
-});
+function cancion(){
+  var cancionPrueba = ["Do","Re","Mi","Do","Re"];
+  var temps = 0;
+  for(var j = 0; j < cancionPrueba.length; j++){
+    temps+=500;
+    setTimeout(() => {
+      console.log("nota Cancio "+ cancionPrueba[j]);
+    }, temps);   
+  }
+}
 
 function canço(i){
   if (i==1){
