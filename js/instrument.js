@@ -182,46 +182,46 @@ function canço(i){
     var notaNom = ["Do","Re","Mi","Fa","Sol","La","Si","Do"];
     setTimeout(() => {
       notaDo1();
-    }, 500);
+    }, 800);
     setTimeout(() => {
       notaDo1();
-    }, 1000);
+    }, 1600);
     setTimeout(() => {
       notaSol();
-    }, 1500);
+    }, 2400);
     setTimeout(() => {
       notaSol();
-    }, 2000);
+    }, 3200);
     setTimeout(() => {
       notaLa();
-    }, 2500);
+    }, 3800);
     setTimeout(() => {
       notaLa();
-    }, 3000);
+    }, 4600);
     setTimeout(() => {
       notaSol();
-    }, 3500);
+    }, 5400);
     setTimeout(() => {
       notaFa();
-    }, 4000);
+    }, 6200);
     setTimeout(() => {
       notaFa();
-    }, 4500);
+    }, 7000);
     setTimeout(() => {
       notaMi();
-    }, 5000);
+    }, 7800);
     setTimeout(() => {
       notaMi();
-    }, 5500);
+    }, 8600);
     setTimeout(() => {
       notaRe();
-    }, 6000);
+    }, 9400);
     setTimeout(() => {
       notaRe();
-    }, 6500);
+    }, 10200);
     setTimeout(() => {
       notaDo;
-    }, 7000);
+    }, 11000);
   }else{
     console.log("pos ok");
   }
