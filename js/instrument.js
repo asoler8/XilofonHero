@@ -163,12 +163,20 @@ function esconder() {
 }
 
 function cancion(){
-  var cancionPrueba = ["Do","Re","Mi","Do","Re"];
+  var cancionPrueba = ["Do1", "Re", "Mi","Fa","Sol","La","Si","Do"];
+  var colores = ["#65469b","#4a569a","#3584c4","1e857b"," #529555","#a9b446","#cca120","#cc5a36"];;
   var temps = 0;
+  var count = 0;
+  var div = document.getElementById("notaClick");
   for(var j = 0; j < cancionPrueba.length; j++){
-    temps+=500;
+    temps+=2000;
     setTimeout(() => {
+      var nota = cancionPrueba[count];
+      div.innerHTML = nota;
+      div.style.backgroundColor = colores[count];
       console.log("nota Cancio "+ cancionPrueba[j]);
+      console.log("Temps " + temps);
+      count++;
     }, temps);   
   }
 }

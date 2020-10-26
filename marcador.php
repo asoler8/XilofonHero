@@ -21,7 +21,7 @@
                     <img class="userImg" src="lib/img/img_avatar.png">
                 </nav>
             </div>
-                <div id="desplegableUser" class="popup">
+            <div id="desplegableUser" class="popup">
                 <div class="popupContent">
                     <div class="menuForm">
                         <h3>Iniciar Sessió</h3>
@@ -32,11 +32,23 @@
                         <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
                         <input type="submit" value="Enviar">
                         <a href="php/logout.php">Tancar Sessio</a>
+                        <br><a href="#desplegableForm">No tens cap compte?</a>
                     </form>
                 </div>
-                </div>   
-                <div id="menu-lateral">
+            </div>
+            <div id="desplegableForm" class="popup">
+            <div class="popupContent">
+                <div class="menuForm">
+                    <h3>Crear Compte</h3>
+                    <a href="#">&#8617;</a>
                 </div>
+                <form id="login-form" method="post" action="php/auth_login.php" >
+                    <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                </div>
+            </div>   
             <div class="joc">
                 <iframe id="taulaMarcador" src="marcadorTaula.php"></iframe>
             </div>
@@ -74,9 +86,23 @@
                         <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
                         <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
                         <input type="submit" value="Enviar">
+                        <br><a href="#desplegableForm">No tens cap compte?</a>
                     </form>
                 </div>
-            </div>   
+            </div>
+            <div id="desplegableForm" class="popup">
+            <div class="popupContent">
+                <div class="menuForm">
+                    <h3>Crear Compte</h3>
+                    <a href="#">&#8617;</a>
+                </div>
+                <form id="login-form" method="post" action="php/auth_login.php" >
+                    <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                </div>
+            </div>     
             <div id="menu-lateral">
             </div>
             <div class="joc">

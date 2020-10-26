@@ -22,18 +22,33 @@
                 </nav>
             </div>
             <div id="desplegableUser" class="popup">
+                <div class="popupContent">
+                    <div class="menuForm">
+                        <h3>Iniciar Sessió</h3>
+                        <a href="#">&#8617;</a>
+                    </div>
+                    <form id="login-form" method="post" action="php/auth_login.php" >
+                        <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                        <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                        <input type="submit" value="Enviar">
+                        <a href="php/logout.php">Tancar Sessio</a>
+                        <br><a href="#desplegableForm">No tens cap compte?</a>
+                    </form>
+                </div>
+            </div>
+            <div id="desplegableForm" class="popup">
             <div class="popupContent">
                 <div class="menuForm">
-                    <h3>Iniciar Sessió</h3>
+                    <h3>Crear Compte</h3>
                     <a href="#">&#8617;</a>
                 </div>
                 <form id="login-form" method="post" action="php/auth_login.php" >
-                    <input type="text" name="username" id="username" placeholder=" Nom Usuari"><br>
-                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya"><br><br>
+                    <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                    <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
                     <input type="submit" value="Enviar">
-                    <a href="php/logout.php">Tancar Sessio</a>
                 </form>
-            </div>
+                </div>
+            </div>   
         </div>   
         <div id="menu-lateral">
         <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png"/>
@@ -64,7 +79,7 @@
                         <p id="notaClicar">Nota a Clickar</p>
                     </div>
                 </div>
-                <button id="boton" onclick="cancion()";">Play</button>
+                <button id="boton" onclick="cancion()">Play</button>
                 </div>
                 <div class="footer">
         
@@ -102,9 +117,23 @@
                 <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
                 <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
                 <input type="submit" value="Enviar">
+                <br><a href="#desplegableForm">No tens cap compte?</a>
             </form>
         </div>
-    </div> 
+    </div>
+    <div id="desplegableForm" class="popup">
+        <div class="popupContent">
+            <div class="menuForm">
+                <h3>Crear Compte</h3>
+                <a href="#">&#8617;</a>
+            </div>
+            <form id="login-form" method="post" action="php/auth_login.php" >
+                <input type="text" name="username" id="username" placeholder=" Nom Usuari" required><br>
+                <input type="password" name="pass" id="pass" placeholder=" Contrasenya" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>  
     <div id="menu-lateral">
     <img class="desplegable-lateral" onclick="desplegar()" src="lib/img/simbolo_desplegable.png"/>
     <div id="despContent">
@@ -134,7 +163,7 @@
           <p id="notaClicar">Nota a Clickar</p>
         </div>
       </div>
-      <button id="boton" onclick="cancion()";">Play</button>
+      <button id="boton" onclick="cancion()">Play</button>
     </div>
     <div class="footer">
 

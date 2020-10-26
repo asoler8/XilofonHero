@@ -114,6 +114,11 @@
     pointer-events:auto;
     z-index: 15;
   }
+  #desplegableForm:target{
+    opacity:1;
+    pointer-events:auto;
+    z-index: 16;
+  }
 
 /* MENU LATERAL */
 
